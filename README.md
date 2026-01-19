@@ -59,9 +59,6 @@ Takie rozdzielenie funkcji pozwala na uzyskanie czytelnej struktury systemu: cz�
 
 \## Fotografie układu
 
-\-Pomiar mocy dla sygnału -30dBm ![Układ kompletny1](Fotografie/caly\_uklad1.jpeg)
-\-Pomiar mocy dla sygnału -90dBm![Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
-
 
 \- Interfejs użytkownika- Po włączeniu urządzenia na ekranie wyświetla się główny panel sterowania, na którym widoczny jest napis „SET FREQUENCY [Hz]”. 
 Na tym panelu prezentowany jest również aktualny stan tłumika (Attenuator) oraz wzmacniacza (Amplifier) — oba elementy są domyślnie wyłączone.
@@ -83,8 +80,12 @@ Oba tryby można wywołać bezpośrednio z poziomu głównego panelu.
 
 \- Tryb skanu EMC ![EMC](Fotografie/emc.png)
 
-\- Tryb zawierający "POMOC" ![Help](Fotografie/Help.png)
+\- Tryb zawierający POMOC ![Help](Fotografie/Help.png)
 
+
+\-Pomiar mocy dla sygnału -30dBm ![Układ kompletny1](Fotografie/caly\_uklad1.jpeg)
+
+\-Pomiar mocy dla sygnału -90dBm![Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
 
 
 ---
@@ -93,7 +94,7 @@ Oba tryby można wywołać bezpośrednio z poziomu głównego panelu.
 
 \## Screenshots
 
-\-Alternatywne sterowanie z PC 
+\-Alternatywne sterowanie z PC. Po połączneniu przez Serial automatycznie wyświetlana jest funkcja pomocy, zawieraąca instrukcję obłsugi sterowania przy pomocy komptera PC. Po zastosowaniu danej komendy użytkownik otrzymuje infeformację zwrotną z systemu.
 ![Alternatywne sterowanie z PC](Screenshots/Serial.png)
 
 
