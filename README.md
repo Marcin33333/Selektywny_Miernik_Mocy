@@ -32,6 +32,7 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \- !\[Schemat blokowy oprogramowania](Schematy/Schemat\_blokowy\_oprogramowania.pdf)
 
+![Nowy schemat](Schematy/Schemat1.png)
 
 
 ---
