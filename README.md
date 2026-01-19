@@ -6,24 +6,26 @@
 
 Projekt obejmuje zaprojektowanie i realizację selektywnego miernika mocy na zakres fal krótkich wraz wykonaniem oprogramowania sterującego.  
 
-Urządzenie oparte jest na klasycznym torze superheterodynowym z dwoma przemianami częstotliwości, co pozwala uzyskać wysoką selektywność.  
+Urządzenie oparte jest na klasycznym torze superheterodynowym z dwoma przemianami częstotliwości, umożliwijącymi uzyskanie wysokiej selektywności.  
 
-Projekt składa się z dwóch głównych części:  
+Projektowany selektywny miernik mocy został podzielony na dwie zasadnicze części funkcjonalne: część radiową oraz część sterującą, które przedstawiono na schemacie
+blokowym ponieżej.
+Część radiowa odpowiada za przyjęcie sygnału wejściowego, jego wstępną filtrację, przemiany częstotliwościowe oraz detekcję mocy. Sygnał wejściowy trafia  najpierw do filtru wejściowego FW, który ogranicza pasmo sygnału i tłumi niepożądane składowe spoza zakresu pracy. Następnie przechodzi do bloku przełączanego wzmacniacza, gdzie– w zależności od ustawienia przekaźnika– tor sygnałowy może być wzmocniony przez wzmacniacz AMP lub przekazany dalej bez dodatkowego wzmocnienia. 
+Kolejnym etapem jest pierwsza przemiana częstotliwości. Sygnał z toru wejściowego jest mieszany w układzie M1 z sygnałem lokalnego generatora LO, co daje częstotliwość pośrednią IF1 równą 45 MHz.
+Po mieszaczu sygnał jest filtrowany przez filtr kwarcowy, który zawęża pasmo do wybranego zakresu.
+W dalszej części toru realizowana jest druga przemiana częstotliwości w mieszaczu M2 z doprowadzonym sygnałem oscylatora kwarcowego o częstotliwości 45,545 MHz.
+Wynikiem mieszania jest druga częstotliwość pośrednia IF2 o wartości 455 kHz. Na tym etapie stosowany jest filtr ceramiczny, który jeszcze bardziej zawęża pasmo i zapewnia selektywność odbioru. 
+Po przemianach częstotliwości sygnał jest wzmacniany w kaskadzie wzmacniaczy oznaczonych jako blok wzmocnienia. Kolejnym elementem jest przełączany tłumik T1, który umożliwia wprowadzenie dodatkowego tłumienia lub jego obejście, w zależności
+od ustawień układu sterowania przekaźnikami.
 
-
-
-1\. \*\*Część radiowa:\*\* filtr wejściowy, przełączany wzmacniacz, dwie przemiany częstotliwości (mieszacze + filtry pasmowe), blok wzmacniacza i detektor logarytmiczny do pomiaru mocy.  
-
-2\. \*\*Część sterująca:\*\* mikrokontroler ESP32, sterowanie generatorami LO, przekaźnikami, odczyt ADC, wyświetlacz TFT, klawiatura i enkoder.  
-
-
-
-Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów oraz pomiary charakterystyk toru RF.
-
-
-
----
-
+Ostatni etap toru radiowego stanowi blok wzmocnienia i detekcji logarytmicznej.
+Sygnał jest tam wzmacniany przez wzmacniacz LNA2, a następnie tra a do wzmacniacza logarytmicznego LOG, którego wyjściowe napięcie stałoprądowe stanowi bezpośrednią miarę mocy badanego sygnału.
+Część sterująca została zrealizowana w oparciu o mikrokontroler, który pełni rolę nadrzędną w całym układzie. 
+Odpowiada on za przestrajanie częstotliwości generatora lokalnego. 
+Ponadto steruje przekaźnikami przełączającymi tor pomiarowy (wzmacniacz, tłumik), a także odbiera sygnał analogowy z wzmacniacza logarytmicznego poprzez prze
+twornik ADC. Następnie dokonuje przeliczenia wartości napięcia na jednostki pomiarowe i prezentuje wynik na wyświetlaczu TFT. 
+Mikrokontroler współpracuje z klawiaturą, enkoderem i przyciskami, które umożliwiają intuicyjną zmianę częstotliwości pracy oraz konfigurację pomiaru.
+Takie rozdzielenie funkcji pozwala na uzyskanie czytelnej struktury systemu: część radiowa odpowiada za selektywną obróbkę sygnału, a część sterująca realizuje zadania związane z kontrolą i prezentacją wyników pomiaru.
 
 
 \## Schematy blokowe
@@ -82,24 +84,10 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 ---
 
-
-
-\## Technologie i narzędzia
-
-\- \*\*Technika Radiowa:\*\* heterodynowa przemiana częstotliwości, filtry pasmowe, detekcja logarytmiczna, dopasowanie impedancyjne, selektywność, czułość, dynamika  
-
-\- \*\*Mikrokontrolery i programowanie:\*\* ESP32, C/C++  
-
-\- \*\*Prototypowanie i montaż:\*\* PCB, lutowanie SMD/THT  
-
-\- \*\*Pomiar i aparatura:\*\* VNA, analizator widma, generatory sygnałowe  
-
-\- \*\*CAD RF:\*\* AWR Cadence, projektowanie filtrów, analiza charakterystyk częstotliwościowych, EasyEda  
-
-
-
----
-
+Miernik umożliwia pomiary w szerokim zakresie mocy wejściowych, sięgającym około 85 dB. Najniższy poziom mocy sygnału, jaki można wiarygodnie zmierzyć, wynosi −110 dBm(przy włączonym wzmacniaczu), natomiast najwyższy sięga −25 dBm (z tłumikiem).
+Błąd liniowości w całym zakresie pracy nie przekracza ±0,7 dB.
+Wykorzystanie mikrokontrolera ESP32 pozwoliło na elastyczne zarządzanie całym systemem oraz integrację funkcji sterujących i pomiarowych. 
+Realizacja pracy potwierdziła możliwość budowy kompaktowego i funkcjonalnego miernika mocy na fale krótkie, który może znaleźć zastosowanie w zastosowaniach amatorskich i edukacyjnych
 
 
 \## Link do CV
