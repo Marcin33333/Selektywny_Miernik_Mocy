@@ -94,7 +94,8 @@ Oba tryby można wywołać bezpośrednio z poziomu głównego panelu.
 
 \## Screenshots
 
-\-Alternatywne sterowanie z PC. Po połączneniu przez Serial automatycznie wyświetlana jest funkcja pomocy, zawieraąca instrukcję obłsugi sterowania przy pomocy komptera PC. Po zastosowaniu danej komendy użytkownik otrzymuje infeformację zwrotną z systemu.
+\-Alternatywne sterowanie z PC. 
+Po połączneniu przez Serial automatycznie wyświetlana jest funkcja pomocy, zawieraąca instrukcję obłsugi sterowania przy pomocy komptera PC. Po zastosowaniu danej komendy użytkownik otrzymuje infeformację zwrotną z systemu.
 ![Alternatywne sterowanie z PC](Screenshots/Serial.png)
 
 
