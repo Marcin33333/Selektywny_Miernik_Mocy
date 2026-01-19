@@ -75,7 +75,8 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## Screenshots
 
-\-Alternatywne sterowanie z PC ![Alternatywne sterowanie z PC](Screenshots/Serial.png)
+\-Alternatywne sterowanie z PC 
+![Alternatywne sterowanie z PC](Screenshots/Serial.png)
 
 
 
