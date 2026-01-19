@@ -63,7 +63,23 @@ Takie rozdzielenie funkcji pozwala na uzyskanie czytelnej struktury systemu: cz�
 \-Pomiar mocy dla sygnału -90dBm![Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
 
 
-\- Interfejs użytkownika ![Wyświetlacz TFT](Fotografie/pomiar.png)
+\- Interfejs użytkownika- Po włączeniu urządzenia na ekranie wyświetla się główny panel sterowania, na którym widoczny jest napis „SET FREQUENCY [Hz]”. 
+Na tym panelu prezentowany jest również aktualny stan tłumika (Attenuator) oraz wzmacniacza (Amplifier) — oba elementy są domyślnie wyłączone.
+Sterowanie stanem tłumika i wzmacniacza odbywa się za pomocą klawiszy funkcyjnych, które na ekranie są oznaczone kolorami odpowiadającymi przyciskom fizycznym:
+biały przycisk służy do włączania/wyłączania tłumika, a niebieski — wzmacniacza, co jest wyraźnie zaznaczone na wyświetlaczu.
+Urządzenie umożliwia pomiar sygnałów w zakresie częstotliwości od 1,8 MHz do 30 MHz, co obejmuje m.in. pasma krótkofalarskie oraz inne zastosowania w tym przedziale. 
+Zakres możliwych do zmierzenia mocy zależy od konfiguracji układu i wynosi:
+
+* Konfiguracja bazowa: P_in= −100 dBm do −34 dBm
+
+* Z załączonym wzmacniaczem: P_in = −110 dBm do −40 dBm,
+* Z załączonym tłumikiem: P_in = −94 dBm do −25 dBm.
+![Wyświetlacz TFT](Fotografie/pomiar.png)
+
+Dodatkowo na ekranie dostępne są skróty do trybów specjalnych — pod klawiszem
+„#” znajduje się „HELP”, czyli instrukcja obsługi, natomiast pod klawiszem „∗” — tryb „EMC”  do pomiaru emisji zaburzeń elektromagnetycznych (EMI). 
+W trybie „EMC” przy pomocy klawiszy 4 i 6 możliwe jest przesuwanie markera, który widoczny jest w postaci czerwonych punktów na ekranie. 
+Oba tryby można wywołać bezpośrednio z poziomu głównego panelu.
 
 \- Tryb skanu EMC ![EMC](Fotografie/emc.png)
 
