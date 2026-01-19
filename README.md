@@ -28,9 +28,9 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## Schematy blokowe
 
-\- !\[Schemat blokowy układu](Schematy/Schemat\_blokowy.pdf)
+\- ![Schemat blokowy układu](Schematy/Schemat\_blokowy.pdf)
 
-\- !\[Schemat blokowy oprogramowania](Schematy/Schemat\_blokowy\_oprogramowania.pdf)
+\- ![Schemat blokowy oprogramowania](Schematy/Schemat\_blokowy\_oprogramowania.pdf)
 
 ![Nowy schemat](Schematy/Schemat1.png)
 
@@ -41,11 +41,11 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## PCB
 
-\- !\[PCB layout](PCB/pcb.png)
+\- ![PCB layout](PCB/pcb.png)
 
-\- !\[PCB od góry](PCB/PCB\_dol.png)
+\- ![PCB od góry](PCB/PCB\_dol.png)
 
-\- !\[PCB od dołu](PCB/PCB\_góra.png)
+\- ![PCB od dołu](PCB/PCB\_góra.png)
 
 
 
@@ -55,13 +55,13 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## Fotografie układu
 
-\- !\[Układ kompletny1](Fotografie/caly\_uklad1.jpeg)
-\- !\[Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
+\- ![Układ kompletny1](Fotografie/caly\_uklad1.jpeg)
+\- ![Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
 
 
-\- !\[Wyświetlacz TFT](Fotografie/pomiar.png)
+\- ![Wyświetlacz TFT](Fotografie/pomiar.png)
 
-\- !\[Oscylator eksperymentalny](Fotografie/oscylator.png)
+\- ![Oscylator eksperymentalny](Fotografie/oscylator.png)
 
 
 
@@ -71,7 +71,7 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## Screenshots
 
-\- !\[Alternatywne sterowanie z PC](Screenshots/Serial.png)
+\- ![Alternatywne sterowanie z PC](Screenshots/Serial.png)
 
 
 
