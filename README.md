@@ -43,10 +43,11 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 \## PCB
 
 \-PCB_layout ![PCB layout](PCB/pcb.png)
+\-Oscylator kwarcowy ![Oscylator kwarcowy](Fotografie/oscylator.png)
 
-\-PCB widok od góry ![PCB od góry](PCB/PCB\_dol.png)
+\-PCB widok od dołu ![PCB od góry](PCB/PCB\_dol.png)
 
-\-PCB widok od dołu ![PCB od dołu](PCB/PCB\_góra.png)
+\-PCB widok od góry ![PCB od dołu](PCB/PCB\_góra.png)
 
 
 
@@ -56,13 +57,15 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## Fotografie układu
 
-\- ![Układ kompletny1](Fotografie/caly\_uklad1.jpeg)
-\- ![Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
+\-Pomiar mocy dla sygnału -30dBm ![Układ kompletny1](Fotografie/caly\_uklad1.jpeg)
+\-Pomiar mocy dla sygnału -90dBm![Układ kompletny2](Fotografie/caly\_uklad2.jpeg)
 
 
-\- ![Wyświetlacz TFT](Fotografie/pomiar.png)
+\- Interfejs użytkownika ![Wyświetlacz TFT](Fotografie/pomiar.png)
 
-\- ![Oscylator eksperymentalny](Fotografie/oscylator.png)
+\- Tryb skanu EMC ![EMC](Fotografie/emc.png)
+
+\- Tryb zawierający "POMOC" ![Help](Fotografie/Help.png)
 
 
 
@@ -72,7 +75,7 @@ Projekt uwzględnia prototypowanie PCB, testy filtrów, mieszaczy i oscylatorów
 
 \## Screenshots
 
-\- ![Alternatywne sterowanie z PC](Screenshots/Serial.png)
+\-Alternatywne sterowanie z PC ![Alternatywne sterowanie z PC](Screenshots/Serial.png)
 
 
 
