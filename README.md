@@ -33,7 +33,7 @@ Takie rozdzielenie funkcji pozwala na uzyskanie czytelnej struktury systemu: czÄ
 
 
 
--Schemat blokowy ![Schemat blokowy](Schematy/Schemat1.png)
+-Schemat blokowy ukÅ‚adu ![Schemat blokowy](Schematy/Schemat1.png)
 
 -Schemat blokowy oprogramowania ![Schemat oprogramowania](Schematy/Schemat2.png)
 
